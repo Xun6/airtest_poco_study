@@ -17,9 +17,14 @@ public class TestName {
 		System.out.println("这是测试用例一");
 	}
 	
+	
 	@Test
 	public void testCase2(){
 		System.out.println("这是测试用例二");
+	}
+	@Test(enabled = false)    //表示忽略测试,false表示忽略，true表示不忽略
+	public void testCase3(){
+		System.out.println("这条测试被忽略了！！！！");
 	}
 	
 	@BeforeMethod
