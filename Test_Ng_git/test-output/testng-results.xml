@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21" started-at="2019-12-05T06:45:45Z" finished-at="2019-12-05T06:45:45Z">
+  <suite name="Default suite" duration-ms="24" started-at="2019-12-05T07:09:13Z" finished-at="2019-12-05T07:09:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21" started-at="2019-12-05T06:45:45Z" finished-at="2019-12-05T06:45:45Z">
-      <class name="com.test.git.testNG.ExpectedException">
-        <test-method status="PASS" signature="runtimeExceptionSuccess()[pri:0, instance:com.test.git.testNG.ExpectedException@548b7f67]" name="runtimeExceptionSuccess" duration-ms="7" started-at="2019-12-05T14:45:45Z" finished-at="2019-12-05T14:45:45Z">
+    <test name="Default test" duration-ms="24" started-at="2019-12-05T07:09:13Z" finished-at="2019-12-05T07:09:13Z">
+      <class name="com.test.git.testNG.DependTest">
+        <test-method status="FAIL" signature="test1()[pri:0, instance:com.test.git.testNG.DependTest@6d8a00e3]" name="test1" duration-ms="8" started-at="2019-12-05T15:09:13Z" finished-at="2019-12-05T15:09:13Z">
           <exception class="java.lang.RuntimeException">
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException
-	at com.test.git.testNG.ExpectedException.runtimeExceptionSuccess(ExpectedException.java:25)
+	at com.test.git.testNG.DependTest.test1(DependTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -42,8 +42,39 @@
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runtimeExceptionSuccess -->
-      </class> <!-- com.test.git.testNG.ExpectedException -->
+        </test-method> <!-- test1 -->
+        <test-method status="SKIP" signature="test2()[pri:0, instance:com.test.git.testNG.DependTest@6d8a00e3]" name="test2" duration-ms="0" started-at="2019-12-05T15:09:13Z" depends-on-methods="com.test.git.testNG.DependTest.test1" finished-at="2019-12-05T15:09:13Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependTest.test2()[pri:0, instance:com.test.git.testNG.DependTest@6d8a00e3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependTest.test2()[pri:0, instance:com.test.git.testNG.DependTest@6d8a00e3] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1028)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.test.git.testNG.DependTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

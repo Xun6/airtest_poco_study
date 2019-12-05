@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.git.testNG.ExpectedException">
+      <class name="com.test.git.testNG.DependTest">
         <methods>
-          <include name="runtimeExceptionFaild"/>
+          <include name="test2"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.test.git.testNG.ExpectedException -->
+      </class> <!-- com.test.git.testNG.DependTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
