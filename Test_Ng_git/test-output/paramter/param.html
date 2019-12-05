@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  param</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>param</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 05 15:54:55 CST 2019</td>
+<td>Started on:</td><td>Thu Dec 05 15:40:46 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (15 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (14 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,37 +77,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.test.git.testNG.Parameter.PeramterTest.param()'><b>param</b><br>Test class: com.test.git.testNG.Parameter.PeramterTest</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;name&apos; is required by @Test on method param but has not been marked @Optional or defined
-in C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--26674808\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:156)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:363)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:488)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1833638914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1833638914'><pre>org.testng.TestNGException: 
-Parameter &apos;name&apos; is required by @Test on method param but has not been marked @Optional or defined
-in C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--26674808\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:156)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:363)
+Method param requires 2 parameters but 0 were supplied in the @Test annotation.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1615780336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615780336'><pre>org.testng.TestNGException: 
+Method param requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:193)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:129)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:378)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:488)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
 	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
@@ -131,7 +107,7 @@ in C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--26674808\testng-cus
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 </pre></div></td>
 <td>0</td>
-<td>com.test.git.testNG.Parameter.PeramterTest@7ac7a4e4</td></tr>
+<td>com.test.git.testNG.Parameter.PeramterTest@6d8a00e3</td></tr>
 </table><p>
 </body>
 </html>
