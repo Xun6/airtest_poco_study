@@ -1,43 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22" started-at="2019-12-03T09:38:10Z" finished-at="2019-12-03T09:38:10Z">
+  <suite name="suitename" duration-ms="72" started-at="2019-12-05T05:52:14Z" finished-at="2019-12-05T05:52:14Z">
     <groups>
-      <group name="Server">
-        <method signature="GroupTest.Server2()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="Server2" class="com.test.git.testNG.GroupTest"/>
-      </group> <!-- Server -->
-      <group name="Client">
-        <method signature="GroupTest.Client1()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="Client1" class="com.test.git.testNG.GroupTest"/>
-      </group> <!-- Client -->
+      <group name="teacher">
+        <method signature="GroupsOnClass.teacher1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass@48eff760]" name="teacher1" class="com.test.git.testNG.groups.GroupsOnClass"/>
+        <method signature="GroupsOnClass.teacher2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass@48eff760]" name="teacher2" class="com.test.git.testNG.groups.GroupsOnClass"/>
+      </group> <!-- teacher -->
+      <group name="stu">
+        <method signature="GroupsOnClass1.study1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@6a2bcfcb]" name="study1" class="com.test.git.testNG.groups.GroupsOnClass1"/>
+        <method signature="GroupsOnClass1.study2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@6a2bcfcb]" name="study2" class="com.test.git.testNG.groups.GroupsOnClass1"/>
+        <method signature="GroupsOnClass2.stu1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@7c0e2abd]" name="stu1" class="com.test.git.testNG.groups.GroupsOnClass2"/>
+        <method signature="GroupsOnClass2.stu2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@7c0e2abd]" name="stu2" class="com.test.git.testNG.groups.GroupsOnClass2"/>
+        <method signature="GroupsOnClass1.study1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@9629756]" name="study1" class="com.test.git.testNG.groups.GroupsOnClass1"/>
+        <method signature="GroupsOnClass1.study2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@9629756]" name="study2" class="com.test.git.testNG.groups.GroupsOnClass1"/>
+        <method signature="GroupsOnClass2.stu1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@62ee68d8]" name="stu1" class="com.test.git.testNG.groups.GroupsOnClass2"/>
+        <method signature="GroupsOnClass2.stu2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@62ee68d8]" name="stu2" class="com.test.git.testNG.groups.GroupsOnClass2"/>
+      </group> <!-- stu -->
     </groups>
-    <test name="Default test" duration-ms="22" started-at="2019-12-03T09:38:10Z" finished-at="2019-12-03T09:38:10Z">
-      <class name="com.test.git.testNG.GroupTest">
-        <test-method status="PASS" signature="BeforeGroupsOnClient()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="BeforeGroupsOnClient" is-config="true" duration-ms="4" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+    <test name="runAll" duration-ms="30" started-at="2019-12-05T05:52:14Z" finished-at="2019-12-05T05:52:14Z">
+      <class name="com.test.git.testNG.groups.GroupsOnClass">
+        <test-method status="PASS" signature="teacher1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass@48eff760]" name="teacher1" duration-ms="1" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeGroupsOnClient -->
-        <test-method status="PASS" signature="Client1()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="Client1" duration-ms="3" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+        </test-method> <!-- teacher1 -->
+        <test-method status="PASS" signature="teacher2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass@48eff760]" name="teacher2" duration-ms="0" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Client1 -->
-        <test-method status="PASS" signature="AfterGroupsOnClient()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="AfterGroupsOnClient" is-config="true" duration-ms="0" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+        </test-method> <!-- teacher2 -->
+      </class> <!-- com.test.git.testNG.groups.GroupsOnClass -->
+      <class name="com.test.git.testNG.groups.GroupsOnClass1">
+        <test-method status="PASS" signature="study1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@6a2bcfcb]" name="study1" duration-ms="7" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterGroupsOnClient -->
-        <test-method status="PASS" signature="Server2()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="Server2" duration-ms="1" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+        </test-method> <!-- study1 -->
+        <test-method status="PASS" signature="study2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@6a2bcfcb]" name="study2" duration-ms="0" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Server2 -->
-        <test-method status="PASS" signature="BeforeGroupsOnServer()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="BeforeGroupsOnServer" is-config="true" duration-ms="0" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+        </test-method> <!-- study2 -->
+      </class> <!-- com.test.git.testNG.groups.GroupsOnClass1 -->
+      <class name="com.test.git.testNG.groups.GroupsOnClass2">
+        <test-method status="PASS" signature="stu1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@7c0e2abd]" name="stu1" duration-ms="1" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeGroupsOnServer -->
-        <test-method status="PASS" signature="AfterGroupsOnServer()[pri:0, instance:com.test.git.testNG.GroupTest@5dfcfece]" name="AfterGroupsOnServer" is-config="true" duration-ms="1" started-at="2019-12-03T17:38:10Z" finished-at="2019-12-03T17:38:10Z">
+        </test-method> <!-- stu1 -->
+        <test-method status="PASS" signature="stu2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@7c0e2abd]" name="stu2" duration-ms="1" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterGroupsOnServer -->
-      </class> <!-- com.test.git.testNG.GroupTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- stu2 -->
+      </class> <!-- com.test.git.testNG.groups.GroupsOnClass2 -->
+    </test> <!-- runAll -->
+    <test name="OnlyrunStu" duration-ms="7" started-at="2019-12-05T05:52:14Z" finished-at="2019-12-05T05:52:14Z">
+      <class name="com.test.git.testNG.groups.GroupsOnClass1">
+        <test-method status="PASS" signature="study1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@9629756]" name="study1" duration-ms="1" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- study1 -->
+        <test-method status="PASS" signature="study2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass1@9629756]" name="study2" duration-ms="0" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- study2 -->
+      </class> <!-- com.test.git.testNG.groups.GroupsOnClass1 -->
+      <class name="com.test.git.testNG.groups.GroupsOnClass2">
+        <test-method status="PASS" signature="stu1()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@62ee68d8]" name="stu1" duration-ms="0" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stu1 -->
+        <test-method status="PASS" signature="stu2()[pri:0, instance:com.test.git.testNG.groups.GroupsOnClass2@62ee68d8]" name="stu2" duration-ms="1" started-at="2019-12-05T13:52:14Z" finished-at="2019-12-05T13:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stu2 -->
+      </class> <!-- com.test.git.testNG.groups.GroupsOnClass2 -->
+    </test> <!-- OnlyrunStu -->
+  </suite> <!-- suitename -->
 </testng-results>
