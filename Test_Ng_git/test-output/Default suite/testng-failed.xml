@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.git.testNG.Parameter.PeramterTest">
+      <class name="com.test.git.testNG.Parameter.DataProviderTest">
         <methods>
-          <include name="param"/>
+          <include name="test2"/>
+          <include name="testData"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.test.git.testNG.Parameter.PeramterTest -->
+      </class> <!-- com.test.git.testNG.Parameter.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

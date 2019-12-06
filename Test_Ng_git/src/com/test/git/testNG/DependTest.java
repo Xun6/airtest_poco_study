@@ -15,7 +15,7 @@ public class DependTest {
 	}
 	
 	
-	@Test(dependsOnMethods = {"test1"})
+	@Test(dependsOnMethods = {"test1"})  //依赖test1运行
 	public void test2(){
 		System.out.println("运行测试2");
 	}
