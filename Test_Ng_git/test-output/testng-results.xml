@@ -1,103 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Thread" duration-ms="68" started-at="2019-12-06T07:55:43Z" finished-at="2019-12-06T07:55:43Z">
+  <suite name="Default suite" duration-ms="4033" started-at="2019-12-06T08:20:52Z" finished-at="2019-12-06T08:20:56Z">
     <groups>
     </groups>
-    <test name="demo1" duration-ms="26" started-at="2019-12-06T07:55:43Z" finished-at="2019-12-06T07:55:43Z">
-      <class name="com.test.git.testNG.multiThread.multiThreadOnXmlTest">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.test.git.testNG.multiThread.multiThreadOnXmlTest@36d4b5c]" name="test1" duration-ms="5" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
+    <test name="Default test" duration-ms="4033" started-at="2019-12-06T08:20:52Z" finished-at="2019-12-06T08:20:56Z">
+      <class name="com.test.git.testNG.TimeOutTest">
+        <test-method status="FAIL" signature="testFailed()[pri:0, instance:com.test.git.testNG.TimeOutTest@7ac7a4e4]" name="testFailed" duration-ms="2013" started-at="2019-12-06T16:20:52Z" finished-at="2019-12-06T16:20:54Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testFailed() didn't finish within the time-out 2000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testFailed() didn't finish within the time-out 2000
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.test.git.testNG.multiThread.multiThreadOnXmlTest@36d4b5c]" name="test2" duration-ms="1" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
+        </test-method> <!-- testFailed -->
+        <test-method status="PASS" signature="testSuccess()[pri:0, instance:com.test.git.testNG.TimeOutTest@7ac7a4e4]" name="testSuccess" duration-ms="2002" started-at="2019-12-06T16:20:54Z" finished-at="2019-12-06T16:20:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.test.git.testNG.multiThread.multiThreadOnXmlTest@36d4b5c]" name="test3" duration-ms="1" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-      </class> <!-- com.test.git.testNG.multiThread.multiThreadOnXmlTest -->
-      <class name="com.test.git.testNG.TestName">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="BeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="testCase1" duration-ms="1" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="testCase2" duration-ms="1" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="AfterClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.test.git.testNG.TestName@2ef5e5e3]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- com.test.git.testNG.TestName -->
-    </test> <!-- demo1 -->
-    <test name="demo2" duration-ms="6" started-at="2019-12-06T07:55:43Z" finished-at="2019-12-06T07:55:43Z">
-      <class name="com.test.git.testNG.TestName">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="BeforeSuite" is-config="true" duration-ms="6" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="BeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="testCase1" duration-ms="2" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="testCase2" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="AfterClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.test.git.testNG.TestName@1593948d]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2019-12-06T15:55:43Z" finished-at="2019-12-06T15:55:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterSuite -->
-      </class> <!-- com.test.git.testNG.TestName -->
-    </test> <!-- demo2 -->
-  </suite> <!-- Thread -->
+        </test-method> <!-- testSuccess -->
+      </class> <!-- com.test.git.testNG.TimeOutTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
