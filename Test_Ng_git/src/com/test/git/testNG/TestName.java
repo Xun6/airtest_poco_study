@@ -15,6 +15,7 @@ public class TestName {
 	@Test
 	public void testCase1(){
 		System.out.println("这是测试用例一");
+		System.out.printf("Thread Id_4 : %s%n",Thread.currentThread().getId());
 	}
 	
 	
@@ -25,6 +26,7 @@ public class TestName {
 	@Test(enabled = false)    //表示忽略测试,false表示忽略，true表示不忽略
 	public void testCase3(){
 		System.out.println("这条测试被忽略了！！！！");
+		
 	}
 	
 	@BeforeMethod
